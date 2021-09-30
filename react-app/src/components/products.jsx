@@ -190,7 +190,7 @@ export default class MyTable extends React.Component {
 
     render() {
       return(
-        <div style={{textAlign: 'center', display: 'block', width: 1800, paddingLeft: 150 }}>
+        <div style={{textAlign: 'center', display: 'block', width: 1200, paddingLeft: 0 }}>
         <td><button onClick={this.handleAdd} className="btn btn-secondary">Checkout</button></td>
         <h4>Products</h4>
         <table>
@@ -217,13 +217,13 @@ export default class MyTable extends React.Component {
         </tr>
         {products.map(prod => (
           <tr key={prod.id} style={{textAlign: 'center'}}>
-            <td style={{ border: '2px solid rgba(0, 0, 0, 1)'}}>{prod.title}</td>
-            <td style={{ border: '2px solid rgba(0, 0, 0, 1)'}}>{prod.price}</td>
-            <td style={{ border: '2px solid rgba(0, 0, 0, 1)'}}>{prod.description}</td>
-            <td style={{ border: '2px solid rgba(0, 0, 0, 1)'}}>{prod.category_id}</td>
-            <td style={{ border: '2px solid rgba(0, 0, 0, 1)'}}><img src = {prod.image} alt="" style={{ width: "100%", margin: "30px 0" }}/></td>
-            <td style={{ border: '2px solid rgba(0, 0, 0, 1)'}}>{prod.qty}</td>
-            <td style={{ border: '2px solid rgba(0, 0, 0, 1)'}}><button onClick={this.handleAdd} className="btn btn-secondary">Add</button></td>
+            <td style={{ border: '2px solid rgba(0, 0, 0, 1)', padding: 20}}>{prod.title}</td>
+            <td style={{ border: '2px solid rgba(0, 0, 0, 1)', padding: 20}}>{prod.price}</td>
+            <td style={{ border: '2px solid rgba(0, 0, 0, 1)', padding: 20}}>{prod.description}</td>
+            <td style={{ border: '2px solid rgba(0, 0, 0, 1)', padding: 20}}>{prod.category_id}</td>
+            <td style={{ border: '2px solid rgba(0, 0, 0, 1)', padding: 20}}><img src = {prod.image} alt="" style={{ width: "100%", margin: "30px 0" }}/></td>
+            <td style={{ border: '2px solid rgba(0, 0, 0, 1)', padding: 20}}>{prod.qty}</td>
+            <td style={{ border: '2px solid rgba(0, 0, 0, 1)', padding: 20}}><button onClick={this.handleAdd} className="btn btn-secondary">Add</button></td>
           </tr>
         ))}
         </table>
