@@ -25,7 +25,6 @@ export function AuthProvider({children}) {
         // returns a promise 
     };
 
-
     // whenever createUserWithEmailAndPassword, it will activate setCurrentUser in line 24 for us
     // should not be in a render, but a useEffect as we only want to run this when we mount our component
     // auth.onAuthStateChanged actually returns a method, and when we call this method, it will unsubscribe the onAuthStateChanged event
