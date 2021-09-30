@@ -1,6 +1,6 @@
 import React, {useContext, useState, useEffect} from 'react';
 import {auth} from '../firebase';
-import {signInWithEmailAndPassword, signOut} from 'firebase/auth';
+import {signInWithEmailAndPassword, signOut, sendPasswordResetEmail} from 'firebase/auth';
 const AuthContext = React.createContext();
 
 
@@ -24,6 +24,11 @@ export function AuthProvider({children}) {
         return signOut(auth)
         // returns a promise 
     };
+    
+    function resetPassword(email) {
+        return sendPasswordResetEmail(auth,email)
+    };
+
 
     // whenever createUserWithEmailAndPassword, it will activate setCurrentUser in line 24 for us
     // should not be in a render, but a useEffect as we only want to run this when we mount our component
@@ -45,6 +50,7 @@ export function AuthProvider({children}) {
         currentUser,
         login,
         logout,
+        resetPassword
     };
 
     return (

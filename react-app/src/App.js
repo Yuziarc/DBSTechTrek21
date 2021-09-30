@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Cart from './pages/Cart';
 import {AuthProvider} from './context/AuthContext';
 import PrivateRoute from './pages/PrivateRoute';
+import ForgotPassword from './pages/ForgotPassword';
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
             <Switch>
               <Route exact path='/' component={Login} />
               <PrivateRoute path='/products' component={Product} />
-              {/* <Route path='/login' component={Login} /> */}
               <PrivateRoute path='/cart' component={Cart} />
+              <Route path='/forgotpassword' component={ForgotPassword} />
             </Switch>
           </AuthProvider>
         </BrowserRouter>
