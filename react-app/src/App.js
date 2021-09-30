@@ -1,7 +1,8 @@
 import React from "react";
 import {Route, Switch, BrowserRouter} from "react-router-dom";
 import {Container} from 'react-bootstrap';
-import Product from './pages/Product';
+import Products from './pages/Products';
+
 import Login from './pages/Login';
 import Cart from './pages/Cart';
 import {AuthProvider} from './context/AuthContext';
@@ -15,7 +16,9 @@ function App() {
           <AuthProvider>
             <Switch>
               <Route exact path='/' component={Login} />
-              <PrivateRoute path='/products' component={Product} />
+              <PrivateRoute path='/products'>
+                <Products/>
+              </PrivateRoute>
               {/* <Route path='/login' component={Login} /> */}
               <PrivateRoute path='/cart' component={Cart} />
             </Switch>
