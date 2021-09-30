@@ -191,6 +191,7 @@ export default class MyTable extends React.Component {
     render() {
       return(
         <div style={{textAlign: 'center', display: 'block', width: 1800, paddingLeft: 150 }}>
+        <td><button onClick={this.handleAdd} className="btn btn-secondary">Checkout</button></td>
         <h4>Products</h4>
         <table>
         <tr>
