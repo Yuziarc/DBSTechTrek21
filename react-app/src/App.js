@@ -1,7 +1,7 @@
 import React from "react";
 import {Route, Switch, BrowserRouter} from "react-router-dom";
 import {Container} from 'react-bootstrap';
-import Product from './pages/Product';
+import Product from './components/products';
 import Login from './pages/Login';
 import Cart from './pages/Cart';
 import {AuthProvider} from './context/AuthContext';
