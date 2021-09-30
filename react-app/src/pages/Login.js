@@ -22,7 +22,7 @@ export default function Login() {
 
             await login(emailRef.current.value, passwordRef.current.value)
             // if (isMountedRef.current){
-                history.push('/')
+                history.push('/products')
             // }
         } catch {
             setError('Failed to log in')
