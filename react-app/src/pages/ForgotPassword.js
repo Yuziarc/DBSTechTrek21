@@ -44,7 +44,7 @@ export default function ForgotPassword() {
                             {/* ref so that we can get the value when we submit the Form */}
                         </Form.Group>
 
-                        <Button className='w-100' type='submit' disabled={loading}>Reset Password</Button>
+                        <Button className='w-100 mb-4 mt-3' type='submit' disabled={loading}>Reset Password</Button>
                         {/* if loading, disable the button */}
                     </Form>
                     <div className='w-100 text-center mt-2'>
