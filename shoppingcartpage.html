@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+		background: lightblue;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: cetner;
+		}
+		.cart-container{
+		width: 70%;
+		height: 85%;
+		background-color: white;
+		border-radius: 20px;
+		top: 80px;
+		}
+		.Header{
+		margin: auto;
+		width: 90%;
+ 		height: 15%;
+ 		display: flex;
+ 		justify-content: space-between;
+ 		align-items: center;
+		}
+		.Heading{
+ 		font-size: 25px;
+ 		color: black;
+		}
+		.Action{
+ 		font-size: 15px;
+ 		color: black;
+ 		cursor: pointer;
+ 		border-bottom: 1px solid #E44C4C;
+		}
+		.cart-items{
+			margin: auto;
+ 			width: 90%;
+ 			height: 30%;
+ 			display: flex;
+ 			justify-content: space-between;
+ 			align-items: center;
+		}
+		.image-box{
+			width: 15%;
+			text-align: center;
+		}
+		.about{
+			height: 100%;
+		}
+		.title{
+			padding-top: 5px;
+ 			line-height: 10px;
+ 			font-size: 32px;
+ 			color: black;
+		}
+		.subtitle{
+			line-height: 10px;
+ 			font-size: 18px;
+ 			color: lightgrey;
+		}
+		.counter{
+			width: 15%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.btn{
+			width: 40px;
+ 			height: 40px;
+ 			border-radius: 50%;
+ 			background-color: lightgrey;
+ 			display: flex;
+ 			justify-content: center;
+ 			align-items: center;
+ 			font-size: 20px;
+ 			color: black;
+ 			cursor: pointer;
+		}
+		.count{
+			font-size: 20px;
+ 			color: black;
+		}
+		.prices{
+			height: 100%;
+			text-align: right;
+		}
+		.amount{
+			padding-top: 20px;
+			font-size: 26px;
+			color: black;
+		}
+		.save{
+			padding-top: 5px;
+ 			font-size: 14px;
+ 			color: black;
+ 			cursor: pointer;
+		}
+		.remove{
+			padding-top: 5px;
+ 			font-size: 14px;
+ 			color: black;
+ 			cursor: pointer;
+		}
+</style>
+
+<body>
+	
+	<div class="cart-container">
+		<div class="Header">
+			<h3 class="Heading">Shopping Cart</h3>
+			<h5 class="Action">Remove all</h5>
+		</div>
+
+		<div class="cart-items">
+			<div class="image-box">
+				<img src="https://www.e-fresco.io/pub/media/catalog/product/f/r/fresh-red-fuji-apple-specification-yantai-fuji-apple-honey-fuji-apple.jpg" height="120px">
+			</div>
+			<div class="about">
+				<h1 class="title">Item 1</h1>
+				<h3 class="subtitle">Made in</h3>
+			</div>
+				<div class="counter"></div>
+				<div class="btn">+</div>
+				<div class="count">0</div>
+				<div class="btn">-</div>
+			<div class="price"></div>
+
+			<div class="prices">
+			<div class="amount">$4.25</div>
+			<div class="remove">Remove item</div>
+		</div>
+
+		</div>
+		
+
+
+	</div>
+</body>
+
+</html>
